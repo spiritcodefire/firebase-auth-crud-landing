@@ -7,7 +7,8 @@ import Col from 'react-bootstrap/Col' ;
 const LandingPage = () => {
     return (
         <div>
-           <Form>
+            <h1>test</h1>
+           {/* <Form>
                 <Row className="mb-3">
                     <Form.Group as={Col} controlId="formGridEmail">
                     <Form.Label>Email</Form.Label>
@@ -57,7 +58,7 @@ const LandingPage = () => {
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>
-            </Form>
+            </Form> */}
         </div>
     )
 }
