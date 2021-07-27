@@ -3,6 +3,7 @@ import firebase from 'firebase';
 const firebaseConfig = {
   apiKey: "AIzaSyBokqD3hSlHT8INzeaH5wNik4YzHhq6WyY",
   authDomain: "tuto-from-scratch-auth-crud.firebaseapp.com",
+
   databaseURL: "https://tuto-from-scratch-auth-crud-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "tuto-from-scratch-auth-crud",
   storageBucket: "tuto-from-scratch-auth-crud.appspot.com",
@@ -13,4 +14,7 @@ const firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-export default firebase;
+
+const storage = firebase.storage() ;
+
+export { storage, firebase as default } ;

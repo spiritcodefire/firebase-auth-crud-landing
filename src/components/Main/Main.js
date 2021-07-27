@@ -5,20 +5,23 @@ import Read from '../Read/Read'
 
 const Main = () => {
     return (
-        <main>
-            <nav>
+        <main className="container-fluid">
+    
+            <h1>React Crud</h1>
+            <div className="row justify-content-between">
 
-                <h1>React Crud</h1>
-
-                <h4>
+                <div className="col-6 h4">
                     Bonjour {firebase.auth().currentUser.displayName} 
-                </h4>
+                </div>
+                <div className="col-6">
+                    <div className="btn btn-warning" onClick={() => firebase.auth().signOut() }>Se déconnecter</div>
+                </div>
 
-                <div style={{background : ""}} onClick={() => firebase.auth().signOut() }>Se déconnecter</div>
-
-            </nav>
+            </div>
+                
             <Create />
             <Read />
+
         </main>
     )
 }

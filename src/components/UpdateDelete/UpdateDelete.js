@@ -19,14 +19,12 @@ const UpdateDelete = ({ item }) => {
             quote.update({
                 author : authorUpdate
             });
-            
         }
 
         if (textUpdate !== null) {
             quote.update({
                 text : textUpdate
             });
-            
         }
         setUpdate(false)
     }
@@ -37,10 +35,10 @@ const UpdateDelete = ({ item }) => {
     }
  
     return (
-        <li>
+        <div>
             {
                 update === false && (
-                    <>
+                    <div className="bg-secondary m-1">
                         <div className="item-container">
                             <p>{item.text}</p>
                             <h6>{item.author}</h6>
@@ -48,22 +46,20 @@ const UpdateDelete = ({ item }) => {
                         {/* Si jamais la fonction authorUpdate renvoi TRUE alors affiche les boutons */}
                        
                             <div className="buttons-container">
-                                <button onClick={()=> setUpdate(!update)}>Update</button>
-                                <button onClick={deleteItem}>Delete</button>
+                                <button className="btn btn-light m-1" onClick={()=> setUpdate(!update)}>Update</button>
+                                <button className="btn btn-danger m-1"  onClick={deleteItem}>Delete</button>
                             </div> 
                        
-                        
                         </div>
-
-                        
-                    </>
+                    </div>
                 )
             }
             {update &&
-                <div className="item-container-update">
+                <div className="item-container-update bg-secondary">
 
                     <textarea
                         defaultValue={item.text}
+                        class="form-control"
                         onChange={(e) => setTextUpdate(e.target.value)}
                     />
 
@@ -72,11 +68,11 @@ const UpdateDelete = ({ item }) => {
                         defaultValue={item.author}
                         onChange={(e) => setAuthorUpdate(e.target.value)}
                     />
-                    <button onClick={updateItem}>validateUpdate</button>
+                    <button className="btn btn-success" onClick={updateItem}>validateUpdate</button>
 
                 </div>
             }
-        </li>
+        </div>
     )
 }
 

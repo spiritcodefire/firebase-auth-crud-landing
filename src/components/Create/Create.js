@@ -23,21 +23,35 @@ const Create = () => {
     }
 
     return (
-        <div className="create">
-            <h4>Déposer une citation</h4>
-            <div className="form">
-                <input 
-                    type="text"
-                    placeholder="Auteur"
-                    value={author}
-                    onChange={(e) => setAuthor(e.target.value)}
-                />
-                <textarea 
-                    placeholder="Citation"
-                    value={text}
-                    onChange={(e) => setText(e.target.value)}
-                />
-                <button onClick={createQuote}>Create</button>
+        <div className="bg-light">
+            <div className="row justify-content-center">
+                <div className="col-6">
+                    <h4>Déposer votre candidature et recevez des Chantiers par Milliers</h4>
+                    <div className="form-group col-auto mb-1">
+                        <input 
+                            className="form-control"
+                            type="text"
+                            placeholder="Nom de votre entreprise"
+                            value={author}
+                            onChange={(e) => setAuthor(e.target.value)}
+                        />
+                    </div>  
+                    <div className="form-group col-auto mb-1">  
+                        <textarea 
+                            className="form-control"
+                            placeholder="Expliquez nous votre étique"
+                            value={text}
+                            onChange={(e) => setText(e.target.value)}
+                        />
+                        <button className="btn btn-warning mt-1" onClick={createQuote}>Create</button>
+
+
+
+
+
+
+                    </div>
+                </div>    
             </div>
         </div>
     )
