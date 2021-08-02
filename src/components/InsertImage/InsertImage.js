@@ -33,7 +33,7 @@ const InsertImage = () => {
                 .child(image.name)
                 .getDownloadURL()
                 .then(url => {
-                   // console.log(url)
+                   console.log(url)
                     setUrl(url)
                 })
             }

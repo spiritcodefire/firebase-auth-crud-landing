@@ -1,18 +1,30 @@
 import React from 'react' ;
-import Create from '../../components/Create/Create'
-// import Form from 'react-bootstrap/Form' ;
-// import Row from 'react-bootstrap/Row' ;
-// import Button from 'react-bootstrap/Button' ;
-// import Col from 'react-bootstrap/Col' ;
+import NavBar from '../../components/NavBarTop/NavBarTop'
+import SectionFormPhoto from '../../sections/SectionFormPhoto/SectionFormPhoto'
+import SectionTrio from '../../sections/SectionTrio/SectionTrio'
+import SectionMarque from '../../sections/SectionMarque/SectionMarque'
+import SectionCardTextDuo from '../../sections/SectionCardTextDuo/SectionCardTextDuo'
+import SectionCommentCaMarche from '../../sections/SectionCommentCaMarche/SectionCommentCaMarche';
+import SectionFooter from '../../sections/SectionFooter/SectionFooter';
+
 
 const LandingPage = () => {
     return (
-        <div>
-            <h1>Bienvenue dans notre Landing Page</h1>
-            <Create />
-            
+        <>
+            <NavBar />
 
-        </div>
+            <SectionFormPhoto />
+
+            <SectionTrio />
+
+            <SectionCommentCaMarche />
+
+            <SectionMarque />
+            
+            <SectionCardTextDuo />
+
+            <SectionFooter />
+        </>
     )
 }
 
