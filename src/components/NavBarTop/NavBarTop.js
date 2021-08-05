@@ -3,6 +3,7 @@ import './NavBar.css'
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
+import logo from '../../assets/logoLanding.jpg'
 
 const NavBarTop = () => {
 
@@ -10,7 +11,7 @@ const NavBarTop = () => {
     return (
         <header className="">
           
-            <a href="https://api.whatsapp.com/send?phone=33182831535&text=Merci%20de%20me%20rappeler,%20c'est%20%C3%A0%20propos%20d'un%20devis" target="_blank" rel="noopener noreferrer">
+            <a href="https://api.whatsapp.com/send?phone=33651000187&text=Merci%20de%20me%20rappeler,%20c'est%20%C3%A0%20propos%20d'un%20devis" target="_blank" rel="noopener noreferrer">
                 <div id="btnWhatsapp" className="d-block d-sm-none bg-success rounded-circle position-absolut fixed-bottom" style={{width: "100px", marginLeft: "271px", height: "100px"}}>
                     <i aria-hidden="true" style={{fontSize: "453%", marginLeft: "18px", marginTop: "13px"}} className="fab fa-whatsapp text-white"></i>	
                 </div>
@@ -18,7 +19,7 @@ const NavBarTop = () => {
 
             <Navbar collapseOnSelect expand="lg" bg="light" variant="primary" style={{border: "0px solid blue"}}>
                 <Container>
-                    <Navbar.Brand href="#home" className="h3">LogoLanding<span className="text-success">.</span></Navbar.Brand>
+                    <Navbar.Brand href="#home" className="h3"><img src={logo} height="70px" alt="logo top renovation bc" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav " className="svgBurger " />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         

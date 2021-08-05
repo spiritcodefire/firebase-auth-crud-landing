@@ -46,11 +46,11 @@ const CarrousselMarque = (props) => {
             dotListClass="custom-dot-list-style"
             itemClass="carousel-item-padding-40-px"
         >
-            <div><img src={imgDaikin} height="35px" alt="logo Daikin" /></div>
-            <div><img src={ToshibaLogo} height="35px" alt="logo Daikin" /></div>
-            <div><img src={auer} height="35px" alt="logo Daikin"/></div>
-            <div><img src={Mitsubishi} height="35px" alt="logo Daikin" /></div>
-            <div><img src={Panasonic} height="35px" alt="logo Daikin" /></div>
+            <div><img src={imgDaikin} height="35px" alt="pompe-à-chaleur-Daikin" /></div>
+            <div><img src={ToshibaLogo} height="35px" alt="pac-pompe-a-chaleur-Toshiba" /></div>
+            <div><img src={auer} height="35px" alt="ballon thermodynamique-auer"/></div>
+            <div><img src={Mitsubishi} height="35px" alt="Mitsubishi bar-th-164" /></div>
+            <div><img src={Panasonic} height="35px" alt="Panasonic " /></div>
 
         </Carousel>
     )

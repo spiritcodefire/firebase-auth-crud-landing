@@ -3,7 +3,7 @@ import React from 'react'
 const CardDuo = (props) => {
     console.log(props);
     return (
-        <div className="card shadow rounded-lg border border-success" >
+        <div className="card shadow rounded-lg border border-success min-vh-100" >
 
             <img src={props.img} className="card-img-top p-5" alt={props.alt} />
 

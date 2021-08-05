@@ -5,7 +5,7 @@ const CardTrio = (props) => {
     <div className="card border border-success mx-auto shadow" style={{width: "90%", height: "500px"}}>
         <img src={props.svg} height="400px" className="card-img-top" alt={props.alt}/>
         <div className="card-body">
-          <p className="card-text">{props.text}</p>
+          <h3 className="card-text h6">{props.text}</h3>
         </div>
     </div>
     )
