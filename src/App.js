@@ -18,11 +18,11 @@ const App = () => {
 
 
 
-          {/* <Route path="/Home" exact component={Home}/>
+          <Route path="/Home" exact component={Home}/>
           <Route path="/Authentification" exact component={Authentification}/>
           <Route path="/LandingPage" exact component={LandingPage}/>
           <Route path="/InsertImage" exact component={InsertImage}/>          
-          <Route path="/Test" exact component={Test}/> */}
+          <Route path="/Test" exact component={Test}/>
 
         </Switch>
       </BrowserRouter>
